@@ -1,0 +1,34 @@
+app-name: sre-dashboard
+logging-path: /Users/zili/ziliCode/jkstack/jkstack-dashboard/sre-dashboard/
+# tapd api 登陆信息
+tapd:
+  endpoint: https://api.tapd.cn
+  username: ZRqVL3n*
+  password: BAB66012-736D-058F-1DDE-BB835083DD5D
+  created: #2023-03-01~2023-12-31  # 默认空，即为当前季度，如需获取指定范围，按格式填写
+dingtalk:
+  webhook: https://oapi.dingtalk.com/robot/send?access_token=ddf923da73cf6056d8cddb5049603b5c6b8f8c2eddb1ba2b80d622781618e378
+database:
+  init: true # true 执行migration
+  host: 192.168.1.32
+  port: 3306
+  dbname: sredashboard
+  username: root
+  password: xSUPf87Fayq
+gitlab:
+  endpoint: http://gitlab.jkservice.org
+  token: Y7gzgfuPfR4ePy99M5vZ
+  mrprojectid: [764]  # 同步项目MR信息
+  ppl: [
+    { "name": "dsp-backend", "id": 735 },
+    { "name": "dsp-frontend", "id": 736 },
+    { "name": "df-backend", "id": 786 },
+    { "name": "df-frontend", "id": 785 },
+    { "name": "dv-front-end", "id": 560 },
+    { "name": "dv-back-end", "id": 559 },
+    { "name": "ndpa-frontend ", "id": 884 },
+    { "name": "ndpa-backend", "id": 855 },
+    { "name": "dp-auth", "id": 720 },
+    { "name": "dp-portal", "id": 854 },
+    { "name": "dp-front", "id": 728 },
+  ]

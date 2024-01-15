@@ -1,2 +1,1 @@
-# go-dv-data
-SRE大屏数据获取
+golang 1.20
